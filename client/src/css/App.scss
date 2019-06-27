@@ -178,7 +178,8 @@ li{
 
 .img{
   justify-content: center;
-  size: 17em
+
+  
  
 }
 
@@ -201,4 +202,12 @@ li{
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1);
+}
+
+/* ---------------- api ---------------- */
+
+.API{
+  
+  size: 5px
+ 
 }

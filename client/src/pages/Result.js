@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../components/Grid";
-
+import APIDEMO from '../img/APIDemo.png'
 
 //Budget your trip widget
 
@@ -36,9 +36,13 @@ function Result() {
           }}
         >
         </div>
+        
       </div>
-
+      <img src={APIDEMO} alt="API" class="api"/>;
      
+
+      
+
 
     </Container>
   );
