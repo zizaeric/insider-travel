@@ -6,7 +6,6 @@ import NoMatch from "./pages/NoMatch";
 import Search from "./pages/Search";
 import Result from "./pages/Result";
 import Nav from "./components/Nav";
-// import Footer from "./components/Footer";
 import './css/App.scss'
 
 
@@ -26,8 +25,6 @@ function App() {
           
         </Switch>
         
-        {/* <img src={require('../src/img/cloud-footer2.gif')} alt="Max-width 25%"  /> */}
-        {/* <Footer /> */}
       </div>
     </Router>
   );
