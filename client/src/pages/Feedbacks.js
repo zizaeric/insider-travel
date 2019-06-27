@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
@@ -7,6 +6,8 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
+
+//Feedback GET and Post from feedback db
 class Feedbacks extends Component {
   state = {
     feedbacks: [],
@@ -31,11 +32,7 @@ class Feedbacks extends Component {
       .catch(err => console.log(err));
   };
   
-  // deleteFeedback = id => {
-  //   API.deleteFeedback(id)
-  //     .then(res => this.loadFeedbacks())
-  //     .catch(err => console.log(err));
-  // };
+
 
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -48,7 +45,6 @@ class Feedbacks extends Component {
     event.preventDefault();
     if (this.state.name && this.state.city) {
       API.saveFeedback({
-        // _id:this.state._id,
         name: this.state.name,
         city: this.state.city,
         info: this.state.info
@@ -108,7 +104,7 @@ class Feedbacks extends Component {
                         {feedback.name} from {feedback.city}
                       </strong>
                     </Link>
-                    {/* <DeleteBtn onClick={() => this.deleteFeedback(feedback._id)} /> */}
+            
                   </ListItem>
                 ))}
               </List>
