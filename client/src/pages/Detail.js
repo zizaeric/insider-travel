@@ -26,14 +26,11 @@ class Detail extends Component {
                 {this.state.feedback.name} from {this.state.feedback.city}
               </h1>
 
-              
-              <p>
-                {this.state.feedback.info}
-              </p>
+              <h3>{this.state.feedback.info}</h3>
             </Jumbotron>
           </Col>
         </Row>
-        
+
         <Row>
           <Col size="md-2">
             <Link to="/feedbacks">← Back to Feedback Page</Link>
