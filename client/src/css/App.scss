@@ -1,16 +1,18 @@
 
 body {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  background:  #99cfd3 ;
- 
+  background: url(../img/sky-back.gif) no-repeat center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
 }
+ 
+
 
 
 html {
   height: 200%;
-  font: 70.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+  font: 80.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
   
 }
 
@@ -73,7 +75,7 @@ p {
 
 #slogan { 
   font-size: 0.25em; 
-  color: whitesmoke;
+  color: rgb(107, 197, 122);
 
 
 }
@@ -86,8 +88,8 @@ p {
 
 
 $min-width: 250px;
-$maincolor: #6BBE92;  
-$secondarycolor: #3E8760;
+$maincolor: rgb(7, 107, 54);  
+$secondarycolor: rgb(20, 184, 96);
 
 @mixin transform($value){
   -webkit-transform: ($value);
@@ -104,6 +106,7 @@ $secondarycolor: #3E8760;
 
 *{
   box-sizing: border-box;
+  
 }
 
 
@@ -114,12 +117,12 @@ $secondarycolor: #3E8760;
   font-weight: 400;
   font-size: 0;
   text-transform: uppercase;
-  display: inline-block;
+  // display: inline-block;
   padding: 0;
   margin: 50px auto;
   li{
     font-size: 1.8rem;
-    display: inline-block;
+    // display: inline-block;
     position: relative;
     padding: 15px 20px;
     cursor: pointer;
@@ -142,13 +145,14 @@ li{
     div{
       @include transform(translate(0,-100%));
       @include transition(all 0.5s 0.1s);
-      position: relative;
+      position: center;
     }
     li{
       display:block;
       padding: 0;
       width: 100%;
       background: $secondarycolor !important;
+      position: center;
       
     }
   }
@@ -178,18 +182,14 @@ li{
 
 .img{
   justify-content: center;
-
-  
- 
 }
 
+/* ---------------- animation on navbar ---------------- */
 
-
-/* ---------------- animation ---------------- */
 /* Grow */
 .hvr-grow {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: center;
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   backface-visibility: hidden;
@@ -204,7 +204,7 @@ li{
   transform: scale(1.1);
 }
 
-/* ---------------- api ---------------- */
+/* ---------------- api DEMO---------------- */
 
 .API{
   
